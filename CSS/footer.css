@@ -1,0 +1,17 @@
+.footer{
+	
+	height: 10%;
+	width: 100%;
+	text-align: center;
+}
+
+.footer p{
+	
+	font-style: italic;
+}
+
+.footer img{
+	
+	min-height: 50%;
+	max-width: 100%;
+}

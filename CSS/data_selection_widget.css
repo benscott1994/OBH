@@ -1,0 +1,137 @@
+.overlay{
+	
+	height: 97%;
+	width: 99%;
+	margin: auto;
+	background-color: rgba(0.5, 0.5, 0.5, 0.5);
+	position: absolute;
+	display: none;
+	z-index: 2;
+	color: White;
+}
+
+.downloadable-content{
+	
+	width: 30%;
+	height: 10%;
+	background-color: #002060;
+	position: absolute;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.selector-container{
+	
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.button-container{
+	
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 40%;
+}
+
+.button-container img{
+	
+	max-height: 90%;
+	max-width: 90%;
+}
+
+.button-container img:hover{
+	
+	cursor: pointer
+}
+
+.download-container{
+	
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.close-container{
+	
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.close-container img{
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.run-title{
+	
+	font-size: 1.5vw;
+}
+
+.dropdown-content {
+	
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	font-size: 1vw;
+	color: White;
+}
+
+.dropdown-content a {
+	color: #002060;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.selector-container{
+	
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+		
+.selector-container:hover .dropdown-content {
+	display: block;
+}
+
+/* Firefox support. */
+@-moz-document url-prefix() {
+	
+	#desc_img_1, #desc_img_2{
+	
+		max-height: 30%;
+		max-width: 30%;
+	}
+}
+
+/* MS-Edge support. */
+@supports (-ms-ime-align: auto) {
+	
+/* 	#desc_img_1, #desc_img_2{
+		
+		max-width: 30%;
+		max-height: 30%;
+	}
+	
+	#download_img_1, #download_img_2{
+		
+		max-width: 41%;
+		max-height: 41%;
+	} */
+}

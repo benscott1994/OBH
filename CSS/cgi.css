@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+html {
+	font-size: 18px;
+}
+.videoBig {
+    width: 75%;
+    float: left;
+
+}
+.videoSmall1 {
+    width: 25%;
+    height: 100%;
+    float: right;
+
+}
+.videoSmall2 {
+    width: 25%;
+    height: 100%;
+    float: right;
+
+}
+.videoSmall3 {
+    width: 25%;
+    height: 100%;
+    float: right;
+
+}
+    
+.videoLong {
+    width: 50%;
+    height: 50%;
+    float: left;
+
+}
+    
+.buttonPlay {
+    width: 15%;
+    float: left;
+}
+    
+.buttonNext {
+    width: 15%;
+    float: left;
+}    
+    
+.buttonPause {
+    width: 15%;
+    float: left;
+}
+    
+.image {
+    width: 6%;
+    float: left;
+}
+    
+.social {
+    width: 2%;
+    float: right;
+}
+    
+.speed {
+    width: 10%;
+    float: right;
+}
+    
+.imageHome {
+    width: 10%;
+    float: none;
+
+}
+.cgi {
+    padding: 0%;
+    text-align: center;
+    float: left;
+}
+
+.data {
+    padding: 0%;
+    text-align: center;
+    float: left;
+}
+    
+.h2 {
+    padding: 15%;
+    text-align: center;
+    
+}
+
+.videoSection {
+    padding-top: 0%;
+    text-align: center;
+}
+    
+.home {
+  height: 100%;
+  position: relative;    
+  padding: 150;
+  text-align: center;
+  background: #fff;
+}
+    
+body
+{
+    	font-family: 'Fira Mono', mono;
+	font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  
+
+  color: #f80000;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  -webkit-transition: color 0.3s ease;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ Hamburger menu
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  -webkit-transform-origin: 4px 0px;
+  
+          transform-origin: 4px 0px;
+  
+  -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease,
+              -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menuToggle span:first-child
+{
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ Hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ Other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ Absolute positioned at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  -webkit-transform-origin: 0% 0%;
+  
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/*
+ Slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  -webkit-transform: none;
+          transform: none;
+}
+
+iframe
+{
+	height:100vh;
+	float: right;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+}

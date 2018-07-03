@@ -1,0 +1,332 @@
+html{
+	
+	font-family: Verdana, Geneva, sans-serif;
+	
+}
+
+#container{
+	
+	background: url(../images/404-background_T.png) no-repeat;
+	background-size: cover;
+}
+
+/* Body start */
+.body{
+	
+	height: 74%;
+	width: 100%;
+}
+
+.highlight{
+	
+	color: #fc8100;
+	display: inline;
+}
+.fact-card{
+	
+	width: 10%;
+	height: 20%;
+	position: relative;
+	text-align: center;
+	vertical-align: center;
+}
+
+.fact-card:hover{
+	
+	cursor: pointer;
+}
+
+.fact-card img{
+	
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#node-1.fact-card{
+	
+	top: 75%;
+}
+
+#node-2.fact-card{
+	
+	top: 60%;
+	left: 6%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-3.fact-card{
+	
+	top: 40%;
+	left: 14%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-4.fact-card{
+	
+	top: 20%;
+	left: 25%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-5.fact-card{
+	
+	top: -5%;
+	left: 35%;
+	display: none;
+}
+
+#node-6.fact-card{
+	
+	top: -32%;
+	left: 45%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-7.fact-card{
+	
+	top: -55%;
+	left: 55%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-8.fact-card{
+	
+	top: -75%;
+	left: 64%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+#node-9.fact-card{
+	
+	top: -95%;
+	left: 72%;
+	width: 15%;
+	height: 15%;
+	display: none;
+}
+
+#node-10.fact-card{
+	
+	top: -118%;
+	left: 85%;
+	width: 12%;
+	height: 12%;
+	display: none;
+}
+
+.fact-expanded{
+	
+	position: absolute;
+	text-align: center;
+	width: 20%;
+	height: 30%;
+	color: #002060;
+}
+
+.fact-expanded img{
+	
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#ex-1.fact-expanded{
+	
+	top: 18%;
+	left: 5%;
+}
+
+#ex-2.fact-expanded{
+
+	top: 40%;
+	left: 65%;
+}
+
+.facts-container{
+	
+	width: 100%;
+	height: 80%;
+}
+
+.bloodhound-container{
+	
+	width: 100%;
+	height: 10%;
+	position: relative;
+	top: 12%;
+	z-index: 100;
+}
+
+.bloodhound-container img{
+	
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+.fact-track{
+	
+	width: 100%;
+	height: 10%;
+	position: relative;
+}
+
+.fact-track img{
+	
+	max-height: 100%;
+	width: 100%;
+}
+
+/* Footer start */
+.footer{
+
+	width: 100%;
+	height: 15%;
+}
+
+.footer-left{
+	
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.footer-logo{
+	
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 15%;
+}
+
+.footer-title{
+	
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 85%;
+}
+
+.footer-right{
+	
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 50%;
+}
+
+.footer-right img{
+	
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+	-moz-transform: rotate(180deg);        /* FF */
+	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg); 
+  
+	max-width: 30%;
+	max-height: 30%;
+}
+
+.footer-right img:hover{
+	
+	cursor: pointer;
+}
+
+.footer-main-left{
+	
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;	
+}
+.footer-main-right{
+	
+	position: relative;
+	float:right;
+	width: 50%;
+	height: 100%;
+}
+.controller-left, .more-left{
+	
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.controller-right, .more-right{
+	
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 50%;
+}
+
+/* lets re-write the footer code shall we?*/
+.controller-text, .more-title{
+
+	font-size: 0.74vw;
+	color: #31849b;
+	text-transform: uppercase;
+}
+
+.fact-controller{
+	
+	display: block;
+}
+
+.fact-controller img{
+	
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+	-moz-transform: rotate(180deg);        /* FF */
+	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg); 
+  
+	max-width: 10%;
+	max-height: 10%;
+}
+
+#progress, #restart{
+	
+	display: inline;
+}
+
+#download, #bot{
+	
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.fact-controller img:hover{
+	
+	cursor: pointer;
+}
+
+.footer-bold{
+	
+	text-transform: uppercase;
+	color: #002060;
+	font-size: 4vw;
+	float: left;
+}
+
+.footer-sub{
+	
+	color: #31849b;
+	text-transform: uppercase;
+	font-size: 2vw;
+	float: left;
+}

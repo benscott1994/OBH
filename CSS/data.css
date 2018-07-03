@@ -1,0 +1,158 @@
+html{
+	
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+iframe{
+	
+	border-style: none;
+}    
+
+.top{
+	
+	vertical-align: top;
+	height: 68%;
+}
+
+.bottom{
+	
+	vertical-align: bottom;
+	height: 32%;
+}
+
+.graphFrame{
+	
+	position: relative;
+	width: 75%;
+	height: 85%;
+	float: left;
+}
+
+.dataFrame{
+	
+	position: relative;
+	width: 25%;
+	height: 85%;
+	float: right;
+	background-image: url('../images/data_background.png');
+}
+
+.table-container{
+	
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7%;	
+}
+
+.description{
+
+	height: 50%;
+	width: 100%;
+	position: relative;
+	color: #002060;
+}
+
+.quote{
+	
+	font-style: italic;
+	display: inline;
+}
+
+.download_title{
+	
+	width: 90%;
+	background-color: #002060;
+	color: white;
+	font-size: 1.5vw;
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+.bottom{
+	
+	position: relative;
+	color: #002060;
+	font-size: 1vw;
+}
+
+.bottom img{
+	
+	max-height: 60%;
+	max-width: 60%;
+}
+
+.bottom img:hover{
+	
+	cursor: pointer;
+}
+
+.download_left{
+	
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.download_left_top{
+	
+	vertical-align: top;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+.download_left_bottom{
+	
+	vertical-align: bottom;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+.download_right{
+	
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+
+.download_right_top{
+	
+	vertical-align: top;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+.download_right_bottom{
+	
+	vertical-align: bottom;
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+/* Firefox support. */
+@-moz-document url-prefix() {
+	
+	.download img{
+	
+		max-height: 50%;
+		max-width: 50%;
+	}
+}
+
+/* MS-Edge support. */
+@supports (-ms-ime-align: auto) {
+	
+	.download img{
+		
+		max-width: 30%;
+		max-height: 30%;
+	}
+}

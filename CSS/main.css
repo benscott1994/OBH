@@ -1,0 +1,156 @@
+html{
+	
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.content{
+
+	width: 100%;
+	height: 100%;
+	
+	margin: auto;
+}
+
+.main{
+	
+	width: 100%;
+	height: 80%;
+	margin: auto;
+	background: url(../images/index-background_T.png);
+	background-size: cover;
+}
+
+.main table{
+	
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+.main table tr{
+	
+	height: 100%;
+	width: 100%;
+	margin:auto;
+}
+
+.main table tr td{
+		
+	height: 100%;
+	width: 33%;
+	margin: auto;
+}
+
+.main table tr td table{
+	
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+.main table tr td table tr{
+	
+	height: 50%;
+	width: 100%;
+	margin: auto;
+}
+
+.main table tr td table tr td{
+	
+	height: 50%;
+	width: 100%;
+	margin: auto;
+}
+
+.main table tr td table tr td img{
+	
+	max-height: 67%;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border-radius: 5%;
+}
+
+/* Firefox support. */
+@-moz-document url-prefix() {
+	
+	.main table tr td table tr td img{
+		
+		max-height: 100%;
+	}
+}
+
+/* MS-Edge support. */
+@supports (-ms-ime-align: auto) {
+	
+	.main table tr td table tr td img{
+		
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+/* Internet explorer. (IE9+) */
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+		
+	.main table tr td table tr td img{
+		
+		max-height: 40%;
+	}
+}
+
+/* FACTS PAGE */
+#main #facts{
+	
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#main #facts tr{
+	
+	width: 100%;
+	height: 100%;
+}
+
+#main #facts tr td{
+	
+	width: 50%;
+	height: 100%;
+	vertical-align: top;
+}
+
+#main #facts tr td img{
+	
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: top;
+}
+
+#return{
+
+	float: left;
+	background-color: #002060;
+	width: 100%;
+	margin: auto;
+}
+
+#return a{
+	
+	text-decoration: none;
+	color: white;
+}
+
+#return img{
+	
+	max-width: 2%;
+	max-height: 2%;
+}
+
+#return :hover{
+	
+	color: #fc8100;
+	cursor: pointer;
+}

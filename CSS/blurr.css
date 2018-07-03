@@ -1,0 +1,100 @@
+.holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.holder img{
+	
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 32, 96, 0.75);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 5%;
+}
+
+.holder:hover .middle {
+  height: 100%;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+
+.title{
+	position: relative;
+	bottom: 5%;
+	right: 2.5%;
+	overflow: hidden;
+	height: 10%;
+	width: 95%;
+	background-color: #fa6300;
+	margin: auto;
+	color: white;
+	line-height: 100%;
+	text-align: center;
+	font-size: 22px;
+    box-shadow: 2px 2px 2px #888888;
+	border-radius: 10%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.title::before {
+	
+    display: block;
+    height: 50%;
+    margin-top: -.7em;
+}
+
+/* MS-Edge support. */
+@supports (-ms-ime-align: auto) {
+	
+	.title::after {
+	
+		content: '\A';
+	}
+}
+
+/* Firefox support. */
+@-moz-document url-prefix(){
+	
+	.title{
+		
+		font-weight: 500;
+	}
+}
